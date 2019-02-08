@@ -1,0 +1,52 @@
+body {
+  background-color: #f48c42;
+}
+h1 {
+  color: black;
+  font-family: Courier New;
+  text-align: center;
+  font-size: 50px;
+}
+
+h2.italics {
+  font-style: italic;
+  text-align: center;
+  font-size: 40px;
+  font-weight: normal;
+}
+
+a:hover {
+  color: white;
+}
+a {
+  color: red;
+}
+a:hover {
+  background-color: black;
+}
+
+input:focus {
+    background-color: yellow;
+}
+
+h3 {
+  font-family: Courier New;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+p {
+  color: black;
+  line-height:2;
+}
+
+table {
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid black;
+  padding: 15px;
+}
+
+tr:hover {background-color:  #ffd480;}
