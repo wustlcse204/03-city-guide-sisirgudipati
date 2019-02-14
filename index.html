@@ -9,8 +9,11 @@
   <body>
   <!-- Navigate to different sections of page -->
   <nav>
-    <a href="#places">Places</a>
-    <a href="#contact">Contact Me</a>
+    <ul class="navigation">
+      <li class="navraj"><a href="#intro">Top</a></li>
+      <li class="navraj"><a href="#places">Places</a></li>
+      <li class="navraj"><a href="#contact">Contact Me</a></li>
+    </ul>
   </nav>
   <!-- Introduction information, div below-->
   <div id="intro" class="introInfo">
@@ -22,9 +25,9 @@
     Seattle's music taste is as diverse as its people. Seattle is known for its technology scene as well, with companies like Amazon, Starbucks, Microsoft, and Boeing all beginning in this rainy city.
     If you can get over the rain, Seattle is the best place to be. And if you're ever in town, the comprehensive guide below should give you a good idea of where to start exploring. Hope you enjoy!
     </p>
-    <img src="skyline.jpg" alt="Seattle Skyline" height="300" width="472">
-    <img src="ferrisWheel.jpg" alt="Ferris Wheel" height="300" width="472">
-    <img src="seattleDowntown.jpg" alt="Downtown Seattle" height="300" width="472">
+    <img src="skyline.jpg" alt="Seattle Skyline" class="introPic" height="300" width="472">
+    <img src="ferrisWheel.jpg" alt="Ferris Wheel" class="introPic"height="300" width="472">
+    <img src="seattleDowntown.jpg" alt="Downtown Seattle" class="introPic"height="300" width="472">
   </div>
     <hr>
   <!-- Main information about places below -->
@@ -38,8 +41,8 @@
       It is home to some of the most scenic glaciers known to man, and is topped by two volcanic craters. The most recent recorded volcanic eruption was between 1820 and 1854, but many eyewitnesses reported eruptive activity in 1858, 1870, 1879, 1882, and 1894 as well.
       It's definitely worth visiting but stay safe!
       </p>
-      <p>Popular Activities at Mount Rainier:</p>
-      <ul>
+      <p class="headingItems">Popular Activities at Mount Rainier:</p>
+      <ul id="mountRainierActivities">
         <li>Wildflower Viewing</li>
         <li>Mount Rainier Railroad</li>
         <li>Hiking Sunflower Trails</li>
@@ -67,7 +70,7 @@
       <p><b>Background:</b> Paseo has been a sandwich icon to the Seattle community for over 21 years and has been recognized by legions of top critics, magazines and TV shows worldwide. The restaurant only uses local fresh ingredients in its sandwiches
         and is beloved among Seattle residents. It's a must try.
       </p>
-      <p>Popular Items:</p>
+      <p class="headingItems">Popular Items</p>
       <table>
         <tr>
           <th>Sandwich Name</th>
@@ -97,17 +100,25 @@
       <p><b>Background:</b> Pike Place Market is a public market overlooking the Elliott Bay waterfront in Seattle, Washington, United States. The Market opened August 17, 1907, and is one of the oldest continuously operated public farmers' markets in the United States. Walk around for a little
         bit, you'll find some cool things sold by local vendors!
       </p>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d172138.65426842603!2d-122.48214842963732!3d47.61317464095264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x5490102c93e83355%3A0x102565466944d59a!2sSeattle%2C+WA!3m2!1d47.6062095!2d-122.3320708!5e0!3m2!1sen!2sus!4v1549405978098" width="400" height="400" style="border:0" allowfullscreen></iframe>
+    <h3>Some more places to visit:</h3>
+      <div class="row">
+        <div class="column">Museum of Popular Culture</div>
+        <div class="column">Chihuly Gardens and Glass</div>
+        <div class="column">Museum of Popular Culture</div>
+        <div class="column">Chihuly Gardens and Glass</div>
+      </div>
+      <br>
+      <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d172138.65426842603!2d-122.48214842963732!3d47.61317464095264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x5490102c93e83355%3A0x102565466944d59a!2sSeattle%2C+WA!3m2!1d47.6062095!2d-122.3320708!5e0!3m2!1sen!2sus!4v1549405978098" width="400" height="400" style="border:0" allowfullscreen></iframe>
 <!-- Contact form below, submission not stored-->
   </div>
     <hr>
     <div id="contact" class="form">
     <h2>Contact Me</h2>
       <form>
-        First name:<br>
-        <input type="text" name="firstname"><br>
-        Last name:<br>
-        <input type="text" name="lastname">
+        First name
+        <input type="text" class="name" name="firstname"><br><br>
+        Last name
+        <input type="text" class="name" name="lastname"><br>
         <input type="submit" value="Submit">
       </form>
     </div>

@@ -1,6 +1,7 @@
 body {
   background-color: #f48c42;
 }
+
 h1 {
   color: black;
   font-family: Courier New;
@@ -15,11 +16,15 @@ h2.italics {
   font-weight: normal;
 }
 
+.introPic {
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+
 a:hover {
   color: white;
 }
 a {
-  color: red;
+  color: white;
 }
 a:hover {
   background-color: black;
@@ -39,14 +44,90 @@ h3 {
 p {
   color: black;
   line-height:2;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+.tableDescription{
+  text-transform: uppercase;
+}
+
+.headingItems {
+  text-align: center;
+  font-size: 20px;
+  font-family: Courier New;
+  font-weight: bold;
+}
+
+#contact{
+  text-align: center;
+}
+
+#mountRainierActivities{
+  text-align: center;
+  list-style-type: square;
 }
 
 table {
-  border-collapse: collapse;
+  border-spacing: 5px 5px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 th, td {
-  border: 1px solid black;
+  border: solid black;
   padding: 15px;
 }
 
 tr:hover {background-color:  #ffd480;}
+
+.name {
+   width: 100%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   box-sizing: border-box;
+   border: 2px solid black;
+   border-radius: 4px;
+   background-color: #3CBC8D;
+   color: white;
+}
+
+.navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  position: fixed; /* Make it stick, even on scroll */
+  overflow: hidden;
+  width: 100%;
+  top: 0;
+}
+
+.navraj {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+
+a {
+  display: block;
+  padding: 8px 215px;
+  background-color: #f48c42;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
